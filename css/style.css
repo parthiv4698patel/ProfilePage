@@ -35,3 +35,24 @@
 ::placeholder {
   color: grey;
 }
+.container {
+  max-width: 120rem;
+  /*background-color: red;*/
+  padding: 3rem 0 0 3rem;
+}
+.avtar {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+.username {
+  margin-top: 1rem;
+}
+.description {
+  margin-top: 1rem;
+}
+.description,
+.description1,
+.nickname {
+  color: grey;
+}
