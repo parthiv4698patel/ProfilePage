@@ -1,0 +1,37 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 3.6rem;
+  width: 100%;
+}
+.logo {
+  fill: white;
+  margin: 0 1.1rem 0 0.6rem;
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.list {
+  margin-right: 1.1rem;
+}
+.form {
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 0.3rem;
+  margin-right: 1.1rem;
+}
+::placeholder {
+  color: grey;
+}
