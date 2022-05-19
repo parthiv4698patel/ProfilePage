@@ -63,3 +63,16 @@
 .grid--2-cols {
   grid-template-columns: 1fr 3fr;
 }
+.inner-nav {
+  list-style: none;
+  display: flex;
+  color: black;
+  align-items: center;
+  margin-top: 3rem;
+}
+.inner-list {
+  margin-right: 3rem;
+}
+section nav ul svg {
+  margin-right: 0.5rem;
+}
