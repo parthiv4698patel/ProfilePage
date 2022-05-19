@@ -30,6 +30,22 @@ body {
 .list {
   margin-right: 1.1rem;
 }
+.highlight-repo {
+  font-weight: bold;
+}
+.repo-notification {
+  display: inline-block;
+  min-width: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #24292f;
+  text-align: center;
+  background-color: rgba(175, 184, 193, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 2em;
+}
 .form {
   background-color: black;
   color: gray;
@@ -129,10 +145,20 @@ section nav ul svg {
 .result {
   color: gray;
 }
-.repo-title {
+.repo-title:link,
+.repo-title:visited {
   color: #0969da;
   font-weight: bold;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.repo-title:hover,
+.repo-title:active {
+  color: #0969da;
+  font-weight: bold;
+  text-decoration: underline;
   font-size: 20px;
   font-weight: 600;
 }
