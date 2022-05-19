@@ -56,3 +56,10 @@
 .nickname {
   color: grey;
 }
+
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 3fr;
+}
