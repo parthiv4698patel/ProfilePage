@@ -85,7 +85,27 @@ body {
 .list {
   margin-right: 3rem;
 }
-
+.nav-icon {
+  list-style: none;
+  display: inline-block;
+  color: red;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.notification-profile {
+  margin-left: 30rem;
+}
+.notification-icon,
+.float-icon,
+.dropmenu-icon {
+  color: white;
+}
+.profile-icon {
+  border-radius: 50%;
+}
+.notification-profile {
+  color: white;
+}
 section nav ul svg {
   margin-right: 0.5rem;
 }
