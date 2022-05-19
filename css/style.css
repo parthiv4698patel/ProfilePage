@@ -106,3 +106,65 @@ section nav ul svg {
   padding: 0.3rem;
   margin-right: 1.1rem;
 }
+.result {
+  color: gray;
+}
+.repo-title {
+  color: #0969da;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.repo-title-flex {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  align-items: center;
+}
+.button-star {
+  color: gray;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 7px;
+  background-color: transparent;
+  border: 0.1rem solid;
+}
+.star-symbol {
+  margin-right: 00.3rem;
+}
+.update-text {
+  list-style: none;
+  display: flex;
+  color: black;
+  align-items: center;
+}
+.update-text-list {
+  margin-right: 1.1rem;
+}
+.html-icon {
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.Javascript-icon {
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.star-icon {
+  margin-right: 0.5rem;
+}
+.fork-icon {
+  margin-right: 0.5rem;
+}
+.repo-text {
+  margin-bottom: 0.5rem;
+}
