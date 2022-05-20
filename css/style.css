@@ -34,9 +34,22 @@ body {
   color: white;
   align-items: center;
 }
+.main-nav-list:link,
+.main-nav-list:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.main-nav-list:hover,
+.main-nav-list:active {
+  color: grey;
+}
 
 .main-nav-list {
   margin-right: 1.1rem;
+  text-decoration: none;
 }
 
 .main-nav-list-last {
