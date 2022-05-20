@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -10,11 +11,17 @@
   height: 3.6rem;
   width: 100%;
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.5;
+  overflow-x: hidden;
 }
+
+/*********************************/
+/* Main navigation*/
+
 .logo {
   fill: white;
   margin: 0 1.1rem 0 0.6rem;
@@ -27,12 +34,175 @@ body {
   color: white;
   align-items: center;
 }
-.list {
+
+.main-nav-list {
   margin-right: 1.1rem;
 }
-.highlight-repo {
-  font-weight: bold;
+
+.main-nav-list-last {
+  margin-right: 1.1rem;
 }
+
+.form {
+  background-color: black;
+  color: gray;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 0.3rem;
+}
+
+.input-icon input[type="text"] {
+  padding-right: 40px;
+}
+
+.input-icon {
+  position: relative;
+
+  margin-right: 1.1rem;
+}
+
+.input-icon ion-icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  padding-right: 0.3rem;
+  color: #aaa;
+  border-radius: 100%;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.nav-icon {
+  list-style: none;
+  display: inline-block;
+  color: red;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.notification-profile {
+  margin-left: 40rem;
+}
+
+.notification-icon,
+.float-icon,
+.dropmenu-icon {
+  color: white;
+}
+
+.profile-icon {
+  border-radius: 50%;
+}
+
+.notification-profile {
+  color: white;
+}
+
+/*************************************/
+/*Profile image section*/
+.container {
+  max-width: 120rem;
+  padding: 3rem 2rem 0 3rem;
+}
+
+.user-img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.avtar {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.profile-smily {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-top: 11rem;
+  margin-left: -2.4rem;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 50%;
+  box-shadow: #24292f;
+}
+
+.username {
+  margin-top: 1rem;
+}
+
+.description {
+  margin-top: 1rem;
+  width: 15rem;
+}
+
+.description,
+.nickname {
+  color: grey;
+}
+
+/*****************************/
+/*grid section*/
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 3fr;
+}
+
+/**********************************/
+/*navigation, search, results of repo section*/
+.inner-nav {
+  list-style: none;
+  display: flex;
+  color: black;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-nav {
+  border-bottom: 1px solid grey;
+}
+
+.list {
+  margin-right: 3rem;
+}
+
+section nav ul svg {
+  margin-right: 0.5rem;
+}
+
+.search {
+  margin-top: 1rem;
+  margin-right: 5rem;
+  border-bottom: 1px solid gray;
+}
+
+.search-form {
+  margin-bottom: 1rem;
+}
+
+.search-repo {
+  background-color: white;
+  color: gray;
+  width: 70rem;
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 0.3rem;
+  margin-right: 1.1rem;
+}
+
+.result {
+  color: gray;
+}
+
 .repo-notification {
   display: inline-block;
   min-width: 20px;
@@ -46,138 +216,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 2em;
 }
-.form {
-  background-color: black;
-  color: gray;
-  width: 100%;
-  border: 1px solid grey;
-  border-radius: 7px;
-  padding: 0.3rem;
-}
 
-.input-icon input[type="text"] {
-  padding-right: 40px;
-}
-.input-icon {
-  position: relative;
-
-  margin-right: 1.1rem;
-}
-.input-icon ion-icon {
-  position: absolute;
-  right: 0;
-  top: 6px;
-  padding-right: 0.3rem;
-  color: #aaa;
-  border-radius: 100%;
-}
-
-::placeholder {
-  color: grey;
-}
-.container {
-  max-width: 120rem;
-  /*background-color: red;*/
-  padding: 3rem 2rem 0 3rem;
-}
-.user-img {
-  height: 15rem;
-  width: 15rem;
-  border-radius: 50%;
-}
-.avtar {
-  height: 15rem;
-  width: 15rem;
-  border-radius: 50%;
-}
-.profile-smily {
-  position: absolute;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-top: 11rem;
-  margin-left: -2.4rem;
-  color: grey;
-  border: 2px solid grey;
-  border-radius: 50%;
-  box-shadow: #24292f;
-}
-.username {
-  margin-top: 1rem;
-}
-.description {
-  margin-top: 1rem;
-  width: 15rem;
-}
-.description,
-.nickname {
-  color: grey;
-}
-
-.grid {
-  display: grid;
-}
-.grid--2-cols {
-  grid-template-columns: 1fr 3fr;
-}
-.inner-nav {
-  list-style: none;
-  display: flex;
-  color: black;
-  align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 0.5rem;
-}
-.section-nav {
-  border-bottom: 1px solid grey;
-}
-
-.list {
-  margin-right: 3rem;
-}
-.nav-icon {
-  list-style: none;
-  display: inline-block;
-  color: red;
-  align-items: center;
-  margin-right: 0.5rem;
-}
-.notification-profile {
-  margin-left: 30rem;
-}
-.notification-icon,
-.float-icon,
-.dropmenu-icon {
-  color: white;
-}
-.profile-icon {
-  border-radius: 50%;
-}
-.notification-profile {
-  color: white;
-}
-section nav ul svg {
-  margin-right: 0.5rem;
-}
-.search {
-  margin-top: 1rem;
-  margin-right: 5rem;
-  border-bottom: 1px solid gray;
-}
-.search-form {
-  margin-bottom: 1rem;
-}
-.search-repo {
-  background-color: white;
-  color: gray;
-  width: 70rem;
-  border: 1px solid grey;
-  border-radius: 7px;
-  padding: 0.3rem;
-  margin-right: 1.1rem;
-}
-.result {
-  color: gray;
-}
 .repo-title:link,
 .repo-title:visited {
   color: #0969da;
@@ -195,6 +234,7 @@ section nav ul svg {
   font-size: 20px;
   font-weight: 600;
 }
+
 .repo-title-flex {
   list-style: none;
   display: flex;
@@ -202,6 +242,7 @@ section nav ul svg {
   color: red;
   align-items: center;
 }
+
 .button-star {
   color: gray;
   font-size: 1rem;
@@ -210,18 +251,29 @@ section nav ul svg {
   background-color: transparent;
   border: 0.1rem solid;
 }
+
 .star-symbol {
   margin-right: 00.3rem;
 }
+
+.highlight-repo {
+  font-weight: bold;
+}
+
+/*****************/
+/*List of repositories*/
+
 .update-text {
   list-style: none;
   display: flex;
-  color: black;
+  color: gr;
   align-items: center;
 }
+
 .update-text-list {
   margin-right: 1.1rem;
 }
+
 .html-icon {
   height: 0.8rem;
   width: 0.8rem;
@@ -230,6 +282,7 @@ section nav ul svg {
   display: inline-block;
   margin-right: 0.5rem;
 }
+
 .Javascript-icon {
   height: 0.8rem;
   width: 0.8rem;
@@ -238,12 +291,15 @@ section nav ul svg {
   display: inline-block;
   margin-right: 0.5rem;
 }
+
 .star-icon {
   margin-right: 0.5rem;
 }
+
 .fork-icon {
   margin-right: 0.5rem;
 }
+
 .repo-text {
   margin-bottom: 0.5rem;
 }
