@@ -49,24 +49,57 @@ body {
 .form {
   background-color: black;
   color: gray;
-  width: 15rem;
+  width: 100%;
   border: 1px solid grey;
   border-radius: 7px;
   padding: 0.3rem;
+}
+
+.input-icon input[type="text"] {
+  padding-right: 40px;
+}
+.input-icon {
+  position: relative;
+
   margin-right: 1.1rem;
 }
+.input-icon ion-icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  padding-right: 0.3rem;
+  color: #aaa;
+  border-radius: 100%;
+}
+
 ::placeholder {
   color: grey;
 }
 .container {
   max-width: 120rem;
   /*background-color: red;*/
-  padding: 3rem 0 0 3rem;
+  padding: 3rem 2rem 0 3rem;
+}
+.user-img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
 }
 .avtar {
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
+}
+.profile-smily {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-top: 11rem;
+  margin-left: -2.4rem;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 50%;
+  box-shadow: #24292f;
 }
 .username {
   margin-top: 1rem;
